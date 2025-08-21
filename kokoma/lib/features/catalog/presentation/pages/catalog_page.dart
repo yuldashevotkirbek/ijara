@@ -26,7 +26,9 @@ class CatalogPage extends StatelessWidget {
             title: Text('Mahsulot #${index + 1}'),
             subtitle: const Text('Qisqa tavsif'),
             trailing: const Text('UZS 100 000'),
-            onTap: () {},
+            onTap: () {
+              // Detail page wiring will be added with proper routing later
+            },
           );
         },
       ),

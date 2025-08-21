@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:kokoma/features/catalog/presentation/pages/catalog_page.dart';
 import 'package:kokoma/features/cart/presentation/pages/cart_page.dart';
 import 'package:kokoma/features/checkout/presentation/pages/checkout_page.dart';
+import 'package:kokoma/features/auth/presentation/pages/login_page.dart';
 
 final router = GoRouter(
   routes: [
@@ -19,6 +20,11 @@ final router = GoRouter(
           path: 'checkout',
           name: 'checkout',
           builder: (context, state) => const CheckoutPage(),
+        ),
+        GoRoute(
+          path: 'login',
+          name: 'login',
+          builder: (context, state) => const LoginPage(),
         ),
       ],
     ),
